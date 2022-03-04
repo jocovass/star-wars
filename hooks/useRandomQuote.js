@@ -5,7 +5,7 @@ export const useRandomQuote = () => {
 
   async function fetchQuote() {
     const res = await fetch(
-      "http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote"
+      "https://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote"
     );
     const data = await res.json();
     setQuote(data);
